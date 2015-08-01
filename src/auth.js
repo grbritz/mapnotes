@@ -1,7 +1,7 @@
 function authenticateUser(cb) {
     var authData = ref.getAuth();
     if (!authData) {
-        ref.authWithOAuthPopup("facebook", function(err, data) {
+        ref.authWithOAuthPopup("facebook", function(error, data) {
             if (error) {
                 if (error.code === "TRANSPORT_UNAVAILABLE") {
                   // fall-back to browser redirects, and pick up the session
