@@ -3,20 +3,11 @@
 <head>
     <title></title>
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-    <script>
-        var ref = new Firebase("https://sweltering-torch-5805.firebaseio.com");
-            ref.authWithOAuthPopup("facebook", function(error, authData) {
-              if (error) {
-                console.log("Login Failed!", error);
-              } else {
-                console.log("Authenticated successfully with payload:", authData);
-              }
-            });
-    </script>
 
 </head>
 <body>
 
 </body>
+<script src="/src/auth.js"></script>
+<script src="/src/index.js"></script>
 </html>
-
